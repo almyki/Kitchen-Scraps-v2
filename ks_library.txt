@@ -1,0 +1,201 @@
+
+
+appearance:
+    red, orange, yellow, brown,
+    green, blue, purple, pink,
+    white, black, gray, gold,
+    pale, dark, bright, colorful,
+aroma:
+    fragrant, fruity, citrusy, fresh,
+    earthy, balmy, sweet, rich,
+    smokey, buttery, nutty, pungent,
+    fishy, gamy, foul, unscented
+texture:
+    crispy, crumbly, flaky,
+    juicy, moist, leafy,
+    silky, creamy, thick, gooey,
+    greasy, fizzy, velvety
+    fluffy, spongy, soft, tender
+    crunchy, hard, smooth
+    dry, watery, mushy, tough
+taste:
+    tasteless, mild,
+    spicy, minty, warm, hot, cool, frozen,
+    savory, salty, sour, sweet, bitter,
+    bittersweet, tangy, earthy, numbing, zesty, tart,
+    light, heavy, comforting, unique, hearty, refreshing, gamey, meaty, nutty, oily, oniony, toasty, smokey
+dish_types:
+    beverage
+    breakfast
+    lunch
+    dinner
+    dessert
+    appetizer
+    snack
+tags:
+    raw, mix, processed, dish, meal
+    grain, vegetable, root, leafy green, sea vegetable, fungus,
+    fruit, citrus, berry,
+    nut, seed, bean, seasoning, herb, liquid,
+    meat, fish, seafood, shellfish, exotic meat, dairy, animal produce,
+
+RAW MATERIALS
+apple (raw, fruit, sweet, crispy)
+crab apple
+banana
+coconut
+apricot
+durian
+date
+dragonfruit/pitaya
+fig
+grape
+orange
+blood orange
+clementine
+mandarin
+tangerine
+lemon
+lime
+grapefruit
+pomegranate
+cherry
+strawberry
+elderberry
+goji berry
+gooseberry
+blackberry
+blackcurrant
+currant
+blueberry
+boysenberry
+raspberry
+salmonberry
+peach
+nectarine
+
+papaya
+passionfruit
+pear
+asian pear
+persimmon
+plantain
+plum
+pineapple
+
+cantaloupe
+honeydew
+watermelon
+yellow melon
+lychee
+mango
+kiwifruit
+kumquat
+loquat
+jujube
+miracle fruit
+mulberry
+
+star apple
+star fruit
+
+yuzu
+tamarillo
+tamarind
+pomelo
+quince
+juniper berry
+guava
+avocado
+jackfruit
+acai
+huckleberry
+honeyberry
+cloudberry
+akee
+bilberry
+black sapote
+buddha's hand
+cherimoya
+chico fruit
+damson
+feijoa
+jabuticaba
+jambul
+japanese plum
+jostaberry
+kiwano (horned melon)
+longan
+mangosteen
+marionberry
+nance
+pineberry
+plumcut (pluot)
+purple mangosteen
+rambutan (mamin chino)
+redcurrant
+salal berry
+salak
+satsuma
+soursop
+surinam cherry
+ugli fruit
+white currant
+white sapote
+
+
+
+THEME: BAKED GOODS
+L1: Three Loaves
+L2: Croissant
+L3: Chocolate Muffin
+BRANCH A:
+    L4: Apple Pie
+    L5: Pumpkin Pie
+    L6: Five-Flavor Pie
+BRANCH B:
+    L07: Cake
+    L08: Ice cream cake
+    L09: Cheesecake
+L10: Wedding Cake
+
+
+
+bread: wheat, water, yeast
+
+salad: lettuce, carrot, dressing
+dressing: vinegar, oil, herbs
+
+classic breakfast: orange juice, eggs and bacon, apple
+eggs and bacon: egg, red meat, oil
+orange juice: orange, orange, orange
+
+three-course drinks: fruit smoothie, vegetable juice, soymilk
+fruit smoothie: apple, banana, milk
+vegetable juice: carrot, lettuce, tomato
+soy milk: soybean, nuts, water
+
+full-course meal: salad, egg sandwich, ice cream
+salad
+
+
+
+
+
+
+            'dough': ['wheat', 'egg', 'water'],
+            'bread': [ 'dough', 'salt', 'yeast' ],
+            'dressing': ['vinegar', 'oil', 'herbs'],
+            'salad': [ 'lettuce', 'carrot', 'dressing' ],
+            'eggs and bacon': ['egg', 'red meat', 'oil'],
+            'orange juice': ['orange', 'orange', 'orange'],
+            'classic breakfast': [ 'orange juice', 'eggs and bacon', 'apple' ],
+            'fruit juice': ['apple', 'orange', 'water'],
+            'vegetable juice': ['carrot', 'lettuce', 'water'],
+            'soymilk': ['soybean', 'nuts', 'water'],
+            'three-course drinks': [ 'fruit juice', 'vegetable juice', 'soymilk' ],
+            'mayonnaise': ['egg', 'vinegar', 'oil'],
+            'egg sandwich': ['bread', 'egg', 'mayonnaise'],
+            'ice cream': ['cream', 'sugar', 'ice'],
+            'full-course meal': [ 'salad', 'egg sandwich', 'ice cream' ],
+            }
