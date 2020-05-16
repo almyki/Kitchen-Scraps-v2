@@ -1,0 +1,5 @@
+.idea
+__pycache__
+dist
+steamworks
+food_list.xlsx
