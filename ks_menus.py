@@ -1,10 +1,17 @@
 
+
+
+"""This module is meant to hold classes related to menu screens. Examples include: Play menu, pause/options, levels."""
+
 import pygame
-from ks_environment import Grid
+from ks_environment import Grid, Background
+from ks_buttons import Button
+
 
 
 class Menu():
     """A menu page with buttons to click that trigger various effects."""
+    # TODO This isn't functional yet.
     def __init__(self, name, music):
         """Initialize Menu attributes."""
         self.bg = Background('images/' + name + '.png')
@@ -24,7 +31,8 @@ class Menu():
             'new game': insertbuttonobjhere,
             'credits': ss,
             'save file': xx,
-        }
+            }
+
 
 
 class LevelMenu():

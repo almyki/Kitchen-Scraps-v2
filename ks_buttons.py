@@ -1,12 +1,14 @@
 
 #### Have classes relating to clickable buttons in the game 'Kitchen Scraps'.
 # Includes classes: Food, Mix
-# Play, Pause, Credits, Quit, Options
+# TODO: Play, Pause, Credits, Quit, Options
 
 import pygame
 from PIL import Image
 from ks_library import *
 utilities = Utilities()
+
+
 
 class GameImage():
     """Create image surfaces of frames, boxes, display surfaces, et cetera without interaction options."""
@@ -35,6 +37,8 @@ class GameImage():
         """Draw the food item onto the screen."""
         self.bg.screen.blit(self.img_srf, self.rect)
 
+
+
 class Frame(GameImage):
     """Create an image surface that works as a background frame for another image/text to be positioned on top of."""
 
@@ -50,6 +54,8 @@ class Frame(GameImage):
                 self.img_srf.blit(image, image.rect)
         else:
             self.img_srf.blit(framed_image, framged_image.rect)
+
+
 
 class Button(GameImage):
     """Make a clickable surface-rect object."""
@@ -79,6 +85,7 @@ class Button(GameImage):
 
     def deactivate_button(self):
         self.gry_srf = pygame.image.load('images/gry_' + self.filename + '.png')
+
 
 
 class Food(Button):

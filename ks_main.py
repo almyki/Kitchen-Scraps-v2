@@ -1,5 +1,31 @@
 
-#### Main module for the game Kitchen Scraps.
+
+
+"""Main module for the game Kitchen Scraps."""
+
+#### OUTLINE - MODULES
+# ks_main.py
+"""Contains the active gameplay loop. The \'central hub\' that puts to use the rest of the modules/classes. This should 
+not contain any classes or functions of its own."""
+# ks_settings.py
+"""One huge class that contains all the actual variables and handles a lot of the core mechanisms."""
+    # TODO Split this into multiple classes. 'Variables' container and 'mechanics' container.
+# ks_environment.py
+"""Classes to handle the game's -screen elements- like background images and grids/organization."""
+# ks_menus.py
+"""Classes to handle -menu screens- like the play menu, save/file menu, pause/options menu, and levels menu."""
+# ks_buttons.py
+"""Classes to handle -interactive- images (with rollovers), Frame images, Buttons, and specifically Food buttons."""
+
+#### JUNK MODULES
+# ks_extras_dumping_ground.py
+"""A file meant to contain any bits of code that you aren't using anymore, but want to archive just in case."""
+# ks_library.py
+"""A currently-defunct file that originally held game data about foods/recipes. Turn this into metadata instead?"""
+# ks_settings_misc.py
+"""I don't exactly remember why this is split off or its purpose. I think I orphaned some functions out when I wasn't sure what to do with them for the moment."""
+# ks_testing.py
+"""Empty as of this writing. I use it to test out little bits and bobs isolated sometimes."""
 
 import sys
 import pygame
@@ -12,8 +38,19 @@ ks = Settings('ks_bg')
 # Set up the game and level.
 pygame.init()
 pygame.mixer.music.load('sounds/' + ks.music + '.mp3')
-pygame.mixer.music.set_volume(0.3)
+pygame.mixer.music.set_volume(0.1)
 pygame.mixer.music.play(-1)
+
+
+
+""" ks.start_game()
+
+btn_new_game = Button('new_game', self.bg, origin='center')
+
+def start_new_game():
+    new_game = btn_new_game.check_collide()
+    if new_game == True:
+        self.state == 'play' """
 
 ks.set_level()
 ks.make_level_menu()
@@ -31,7 +68,10 @@ while True:
     # TODO Show Level Prompt Card.
 
     # Detect user events. If mouse-click, return the clicked element and act on it.
-    while ks.state == 'play':
+    if ks.state == 'menu':
+        pass
+
+    elif ks.state == 'play':
         clicked_button = ks.check_buttons()
         # If button is food item, switch grid if possible.
         if clicked_button:

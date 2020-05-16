@@ -3,6 +3,8 @@
 import PIL
 import os
 
+
+
 for filename in os.listdir('images/'):
     if 'gry_' in filename:
         original = 'images/' + filename

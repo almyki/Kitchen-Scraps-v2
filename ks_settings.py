@@ -1,8 +1,15 @@
 
+# TODO: This must be broken into at least two separate classes, if not more. Also, data like recipe book can be put
+# into a metadata file.
+
 import pygame
 import sys
 from ks_environment import Background, Grid, ActiveImage, Button, ResultBox, DetectEvents
 from craft_compendium import CraftCompendium
+
+# if setting-state == menu:
+#   draw and activate these elements: new, continue, credits, sticker book
+#   click button, change state
 
 
 class Settings():
@@ -62,6 +69,8 @@ class Settings():
         self.mix_button.place_image(mix_button_pos, 'center')
         # Testing level menu
         self.level_menu = Grid('level menu', rows=10, columns=1, origin=(60, 60))
+
+
 
     def set_level(self):
         """Reset the button list with the mix button plus all food buttons.

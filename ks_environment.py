@@ -8,9 +8,6 @@ from PIL import Image
 import random
 
 
-
-
-
 pygame.font.init()
 class RootPaths():
     """Create root paths for finding file locations."""
@@ -21,8 +18,9 @@ class RootPaths():
         self.images = self.paths[0]
         self.sounds = self.paths[1]
         self.fonts = self.paths[2]
-root = RootPaths()
 
+
+root = RootPaths()
 
 
 class MessageDisplay():
@@ -62,7 +60,6 @@ class MessageDisplay():
         """Show a full-page screen prompt message that spans multiple lines and wraps around images."""
     def msg_button(self):
         """Create a button out of a message. Consider breaking this into a subclass."""
-
 
 
 class Background():
@@ -122,7 +119,6 @@ class Grid():
                 filler.rect.topleft = coord
                 self.grid[coord] = filler
                 break
-
 
 
 class ActiveImage():
