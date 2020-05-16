@@ -18,11 +18,11 @@ class Utilities():
 
     def double_size_screen(self):
         """Double the size of all elements of the screen."""
-        pass
+        raise NotImplementedError()
 
     def original_size_screen(self):
         """Revert back to the original size of all elements."""
-        pass
+        raise NotImplementedError()
 
 ks_ingredients = {
     'water': ['liquid'],
